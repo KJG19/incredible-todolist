@@ -1,11 +1,16 @@
 import { StyleSheet, Text, View } from "react-native";
+import ToDoForm from "../components/ToDoForm";
+import ToDoList from "../components/ToDoList";
 
 export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
         <Text style={styles.title}>Hello World</Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
+        
+        <ToDoList/>
+        <ToDoForm/>
+
       </View>
     </View>
   );
