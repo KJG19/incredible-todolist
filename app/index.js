@@ -1,16 +1,17 @@
 import { StyleSheet, Text, View } from "react-native";
 import ToDoForm from "../components/ToDoForm";
 import ToDoList from "../components/ToDoList";
+import { useState } from "react";
 
 export default function Page() {
+  const [tasks, setTasks] = useState(["Do laundry", "Go to gym", "Walk dog"]);
+
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>Hello World</Text>
-        
-        <ToDoList/>
-        <ToDoForm/>
-
+        <Text style={styles.title}>To Do List</Text>
+        <ToDoList tasks={tasks} />
+        <ToDoForm />
       </View>
     </View>
   );
