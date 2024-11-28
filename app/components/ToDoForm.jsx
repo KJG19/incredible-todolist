@@ -27,7 +27,7 @@ const ToDoForm = ({ addTask }) => {
           onChangeText={(text) => setTaskText(text)}
           value={taskText}
         />
-        <Button title="Add Task" onPress={handleAddTask} />
+        <Button title="Add Task" onPress={handleAddTask} color="green" />
       </View>
     </SafeAreaView>
   );
